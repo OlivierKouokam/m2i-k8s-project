@@ -48,7 +48,7 @@ Dans le namespace `odoo` :
 
 * Namespace `odoo`
 * Secret pour les identifiants PostgreSQL
-* ConfigMap (si besoin pour la conf de Odoo)
+* ConfigMap ou Secret pour la conf de Odoo si besoin
 * PVC pour Odoo (qui utilisera la storageClass vers le nfs)
 * Deployment pour Odoo
 * Service ClusterIP pour Odoo
@@ -96,7 +96,7 @@ odoo-k8s/
 │   ├── odoo/
 │   │   ├── 00-namespace.yaml
 │   │   ├── 01-secret-postgres.yaml
-│   │   ├── 02-configmap-odoo.yaml (optionnel)
+│   │   ├── 02-configmap-odoo.yaml ou secret-odoo.yaml (si besoin)
 │   │   ├── 03-pvc-odoo.yaml
 │   │   ├── 04-deployment-odoo.yaml
 │   │   ├── 05-service-odoo.yaml
@@ -121,6 +121,7 @@ odoo-k8s/
 * Accès via navigateur : `http://odoo.m2iformation.fr` et faire la première configuration de Odoo
 * Accès Dashboard : `kubectl proxy` - Lecture/Ecriture vérifiée avec le token admin
 * Accès Dashboard : `http://dashboard.m2iformation.fr` - Lecture seule vérifiée avec le token read-only
+* Captures d'écran claires et précises du retour des commandes `kubectl` à chaque étape
 
 ---
 
