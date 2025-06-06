@@ -83,7 +83,7 @@ Dans le namespace `odoo` :
 | 📊 Monitoring    | Kubernetes Dashboard                   |
 | 📄 Observabilité | Vue sur le cluster via UI              |
 | 🚛 GitOps        | Organisation de manifestes             |
-| 📊 Rapport Visuel| Captures d'écran des Résultats         |
+| 📊 **Rapport Visuel**| **Captures d'écran des Résultats**         |
 
 ---
 
