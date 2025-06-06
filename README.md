@@ -87,7 +87,7 @@ Dans le namespace `odoo` :
 
 ---
 
-## 📁 Structure attendue des fichiers (côté devops)
+## 📁 Structure attendue des fichiers (côté <votre_prenom>)
 
 ```
 odoo-k8s/
